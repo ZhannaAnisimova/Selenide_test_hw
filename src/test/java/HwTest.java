@@ -14,11 +14,11 @@ import static com.codeborne.selenide.Selenide.*;
 public class HwTest {
 
     @Test
-    void HomeWorkSelenide () {
+    void HomeWorkSelenideTest () {
         open("https://github.com/selenide/selenide");
         $("#wiki-tab").click();
-        $("#wiki-wrapper").shouldHave(text("Soft assertions"));
-        $(byText ("Soft assertions")).click();
+        $("#wiki-body").shouldHave(text("Soft assertions"));
+        $("#wiki-body").$(byText ("Soft assertions")).click();
         $("#wiki-wrapper").shouldHave(text("@ExtendWith({SoftAssertsExtension.class})\n" +
                 "class Tests {\n" +
                 "  @Test\n" +
