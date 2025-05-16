@@ -14,6 +14,7 @@ public class githubTest {
     @Test
     void githubTest () {
         open ("https://github.com/");
-        
+
+
     }
 }
