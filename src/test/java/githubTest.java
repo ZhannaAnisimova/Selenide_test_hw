@@ -14,6 +14,11 @@ public class githubTest {
     @Test
     void githubTest () {
         open ("https://github.com/");
+        $(byText("Solutions")).hover();
+        $(byText("Enterprises")).click();
+        $("#hero-section-brand-heading").shouldHave(text("The AI-powered developer platform"));
+        sleep(5000);
+
 
 
     }
